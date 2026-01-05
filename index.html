@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Audio Profile Card</title>
+  </head>
+
+  <body>
+    <div class="audio-card">
+      <div class="card-header">
+        <div class="user-badge">
+          <img
+            src="talwiinder.jpg"
+            class="user-avatar"
+            alt="Talwiinder Singh"
+          />
+          <div class="user-info">
+            <h5>Talwiinder Singh</h5>
+            <p>@talwiinder</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <i
+            class="ri-heart-line like-icon"
+            role="button"
+            aria-label="Like this song"
+            tabindex="0"
+          ></i>
+          <button
+            popovertarget="contextMenu"
+            class="menu-icon"
+            aria-label="More options"
+          >
+            <i class="ri-more-2-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="audio-panel">
+        <audio id="audioPlayer" src="music.webm"></audio>
+
+        <div class="progress-track" aria-label="Seek progress">
+          <div class="progress-indicator" id="progressBar"></div>
+        </div>
+
+        <div class="audio-controls">
+          <button class="control-btn" aria-label="Previous song">
+            <i class="ri-skip-back-fill"></i>
+          </button>
+
+          <button class="control-btn" id="playPauseBtn" aria-label="Play">
+            <i class="ri-play-large-fill"></i>
+          </button>
+
+          <button class="control-btn" aria-label="Next song">
+            <i class="ri-skip-forward-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div popover="auto" id="contextMenu" class="context-menu">
+      <button>Add to queue</button>
+
+      <div class="divider"></div>
+
+      <button>Go to song radio</button>
+      <button>Go to artist</button>
+      <button>Go to album</button>
+      <button>Show credits</button>
+
+      <div class="divider"></div>
+
+      <button>Save to Liked Songs</button>
+
+      <div class="submenu-wrapper">
+        <button id="playlistBtn">
+          Add to playlist
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+        <div id="playlistMenu" class="context-menu sub-menu">
+          <button>Chill Vibes</button>
+          <button>Gym Workout</button>
+          <button>Late Night</button>
+          <button>Favorites</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="submenu-wrapper">
+        <button id="shareBtn" class="share-btn">
+          Share
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+        <div id="shareMenu" class="context-menu sub-menu">
+          <button>Copy Link</button>
+          <button>Instagram</button>
+          <button>Twitter</button>
+          <button>WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
