@@ -2,6 +2,8 @@
 
 A modern, aesthetically pleasing Music Player Card UI built with HTML and CSS. This project features a glassmorphism design, a custom audio player interface, and a native Popover API context menu.
 
+![Music Player Card UI](screenshot.png)
+
 ## Features
 
 - **Glassmorphism Design**: Sleek, modern UI with backdrop blur and transparency effects.
